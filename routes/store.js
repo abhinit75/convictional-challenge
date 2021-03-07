@@ -11,7 +11,7 @@ store_router.get('/store/inventory', (req, res) => {
     const errors = {};
     const options = {
       url:
-        'https://my-json-server.typicode.com/convictional/engineering-interview/products',
+      `${process.env.CONVICTIONAL_PRODUCT_API}`,
       method: 'GET',
       headers: {
         Accept: 'application/json',

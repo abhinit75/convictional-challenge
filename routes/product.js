@@ -4,8 +4,6 @@ const router = express.Router();
 const request = require('request');
 const TranslateToProductDTO = require('../Models/Translators/TranslateToProductDTO');
 const TranslateToVariantDTO = require('../Models/Translators/TranslateToVariantDTO');
-// Load Validation
-//const validateProfileInput = require('../../validation/profile');
 
 // Load Product Model
 
@@ -17,7 +15,7 @@ router.get('/product', (req, res) => {
 
   const options = {
     url:
-      'https://my-json-server.typicode.com/convictional/engineering-interview/products',
+      `${process.env.CONVICTIONAL_PRODUCT_API}`,
     method: 'GET',
     headers: {
       Accept: 'application/json',
@@ -49,7 +47,7 @@ router.get('/product/:productId', (req, res) => {
   const errors = {};
   const options = {
     url:
-      'https://my-json-server.typicode.com/convictional/engineering-interview/products',
+    `${process.env.CONVICTIONAL_PRODUCT_API}`,
     method: 'GET',
     headers: {
       Accept: 'application/json',
