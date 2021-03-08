@@ -1,9 +1,9 @@
 # convictional-challenge
 
 # Jobs Completed
-1. Converted Data provided to an internal format and macthed with the given contract
-2. Created 3 GET APIs which fulfil the API Contract `contract.yaml` using the data from step 1.
-3. Dockerized the Node App for easy shipping
+1. Converted Data provided to an internal format and matched with the given contract
+2. Created 3 GET APIs which fulfil the API Contrac in `contract.yaml` using the data from step 1.
+3. Dockerized the Node App for easy shipping 
 
 # Technologies used:
 1. Node JS
@@ -12,7 +12,7 @@
 4. Postman - to test the API
 
 # Key Terms & Structure
-- Used the DAO (Data Acess Object) and DTO (Data Transfer Object) concept to help map the incoming data and trasnfer from one data model to another. 
+- Used the DAO (Data Acess Object) and DTO (Data Transfer Object) concept to help map the incoming data and transfer from one data model to another. 
 - Following the specifications provided in Express JS documentation, the schema (models) have been seperated from routes. 
 
 # Engineering Challenge V3 - Details
